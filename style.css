@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'ww';
+  src: URL('smld.ttf') format('truetype');
+}
+
+#outPopUp {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}
+#bottom {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  z-index: 15;
+  top: 68%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}
+
 html,
 body {
   min-height: 100vh;
@@ -6,7 +30,7 @@ body {
 
 html {
   background: #090000;
-  font-size: calc(1em + 3vmax);
+  /*font-size: calc(1em + 3vmax); */
   line-height: 1.1;
   text-align: center;
 }
@@ -14,10 +38,10 @@ html {
 body {
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(0, 12ch));
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(0, 2ch));
+  /*align-items: center;
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 x-sign {
@@ -39,7 +63,9 @@ x-sign:nth-of-type(1) {
   --color2: orangered;
   --color3: mediumblue;
   --color4: purple;
-  font-family: Gruppo;
+  font-family: ww;
+  text-align: center;
+  font-size: 40px;
 }
 
 x-sign:nth-of-type(2) {
